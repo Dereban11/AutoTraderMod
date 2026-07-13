@@ -48,6 +48,4 @@ java {
 jar {
     from "LICENSE"
 }
-loom {
-    disableGenSources = true
-}
+
