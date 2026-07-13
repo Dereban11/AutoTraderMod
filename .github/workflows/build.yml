@@ -21,9 +21,10 @@ jobs:
           
       - name: Grant execute permission for gradlew
         run: chmod +x gradlew
-        
-      - name: Generate sources with Fernflower (lightweight)
-        run: ./gradlew genSources -Ploom.decompilerName=fernflower --no-daemon
+      
+      # Генерируем ТОЛЬКО маппинги, без распаковки и декомпиляции всего Minecraft.
+      - name: Generate Mappings only (skipping heavy decompile)
+        run: ./gradlew genMappings --no-daemon
         
       - name: Build with Gradle
         run: ./gradlew clean build --no-daemon
