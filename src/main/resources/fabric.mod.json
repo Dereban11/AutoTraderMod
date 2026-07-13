@@ -1,0 +1,25 @@
+{
+  "schemaVersion": 1,
+  "id": "autotrader",
+  "version": "1.0.0",
+  "name": "AutoTrader",
+  "description": "Automatic trading with villagers and crafting gold blocks",
+  "authors": ["You"],
+  "contact": {},
+  "license": "MIT",
+  "icon": "assets/autotrader/icon.png",
+  "environment": "client",
+  "entrypoints": {
+    "client": [
+      "com.example.autotrader.AutoTraderMod"
+    ]
+  },
+  "mixins": [],
+  "depends": {
+    "fabricloader": ">=0.15.0",
+    "minecraft": "1.21.4",
+    "java": ">=21",
+    "fabric-api": "*",
+    "baritone": "*"
+  }
+}
